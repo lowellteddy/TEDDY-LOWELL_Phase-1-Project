@@ -92,7 +92,7 @@ function rentLand() {
         document.getElementById("status").innerHTML = "Invalid card type.";
         return;
     }
-     // Check if the requested acres exceed the allowed limit based on the card type
+     // Checking if the requested acres exceed the allowed limit based on the card type
      if ((cardType === "regular" && acresToRent > 2) ||
      (cardType === "advanced" && acresToRent > 5) ||
      (cardType === "platinum" && acresToRent > 10)) {

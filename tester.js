@@ -166,7 +166,7 @@ function updateCard(acresToRent, cardType) {
 
 function displayItems() {
     const itemsList = document.getElementById("itemsList");
-    itemsList.innerHTML = ""; // Clear previous list
+    itemsList.innerHTML = ""; // Clearing previous list
     
     items.forEach(item => {
         const li = document.createElement("li");

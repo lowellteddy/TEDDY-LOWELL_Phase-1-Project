@@ -183,52 +183,6 @@ function updateCard(acresToRent, cardType) {
     getMaxAcres(acresToRent, cardType);
 
 }
-// create an shop that will have the items in the company's stock
-
-//function that will display the items that are in the shop and the stock amount
-
-// Items in the shop with their initial stock
-// const items = [
-//     { name: "Item 1", stock: 10, amount: 10 },
-//     { name: "Item 2", stock: 15, amount: 20 },
-//     { name: "Item 3", stock: 8, amount: 5 }
-//   ];
-  
-//   // Function to display items in the shop
-//   function displayItems() {
-//     const itemsList = document.getElementById("itemsList");
-//     itemsList.innerHTML = ""; // Clear previous list
-    
-//     items.forEach(item => {
-//       const li = document.createElement("li");
-//       li.textContent = `${item.name} - Stock: ${item.stock}, Amount: ${item.amount}`;
-      
-//       const buyButton = document.createElement("button");
-//       buyButton.textContent = "Buy";
-//       buyButton.addEventListener("click", () => buyItem(item));
-      
-//       li.appendChild(buyButton);
-//       itemsList.appendChild(li);
-//     });
-//   }
-  
-//   // Function to buy an item
-//   function buyItem(item) {
-//     if (item.stock > 0) {
-//       item.stock--;
-//       item.amount++;
-//       displayItems(); // Update displayed items
-//     } else {
-//       alert("Item out of stock!");
-//     }
-//   }
-  
-//   // Event listener for the show items button
-//   document.getElementById("showItemsBtn").addEventListener("click", () => {
-//     document.getElementById("shopItems").style.display = "block";
-//     displayItems();
-//   });
- // Items in the shop with their initial stock
  const items = [
     { name: "Maize Seeds", price: 190, stock: 10 },
     { name: "Bean Seeds", price: 180, stock: 10 },

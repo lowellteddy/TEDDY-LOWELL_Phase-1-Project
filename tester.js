@@ -300,7 +300,7 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
   
 
     })
-//calculating profit based on the regisration amount
+//calculating profit based on the regisration amount of the farmer
 function calculateProfitOrLoss() {
     let registrationAmount = parseFloat(document.getElementById("registrationAmount").value);
     let totalSales = parseFloat(document.getElementById("totalSales").value);

@@ -1,32 +1,34 @@
- //create the farmer's card
- document.getElementById("userForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("userForm").addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    let firstName = document.getElementById("firstName").value;
-    let lastName = document.getElementById("lastName").value;
-    let amount = parseInt(document.getElementById("amount").value);
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        let amount = parseInt(document.getElementById("amount").value);
 
-    let cardContainer = document.getElementById("cardContainer");
-    cardContainer.innerHTML = "";
+        let cardContainer = document.getElementById("farmersList");
+        cardContainer.innerHTML = "";
 
-    let card = document.createElement("div");
-    card.classList.add("card");
+        let card = document.createElement("li");
+        card.classList.add("card");
 
-    if (amount === 30000) {
-        card.classList.add("regular");
-        card.innerHTML = `<h3>Regular Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
-    } else if (amount === 50000) {
-        card.classList.add("advance");
-        card.innerHTML = `<h3>Advance Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
-    } else if (amount === 100000) {
-        card.classList.add("platinum");
-        card.innerHTML = `<h3>Platinum Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
-    } else {
-        card.innerHTML = "<p>Invalid registration amount!</p>";
-    }
+        if (amount === 30000) {
+            card.classList.add("regular");
+            card.innerHTML = `<h3>Regular Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
+        } else if (amount === 50000) {
+            card.classList.add("advance");
+            card.innerHTML = `<h3>Advance Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
+        } else if (amount === 100000) {
+            card.classList.add("platinum");
+            card.innerHTML = `<h3>Platinum Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
+        } else {
+            card.innerHTML = "<p>Invalid registration amount!</p>";
+        }
 
-    cardContainer.appendChild(card);
+        cardContainer.appendChild(card);
+    });
 });
+
 // // Create a new card element
 // const card = document.createElement("div");
 // const loanContainer = document.getElementById("loanContainer");
@@ -339,7 +341,7 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
         const farmerCardContainer = document.getElementById('farmerCardContainer');
         const farmerCard = document.createElement('div');
         farmerCard.classList.add('card');
-        let const = prompt("Enter card type")
+        let  = prompt("Enter card type")
   
         if (farmer.cardType === 'regular') {
           farmerCard.classList.add('yellow');
@@ -370,6 +372,26 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
   
 
     })
+//calculating profit based on the regisration amount
+function calculateProfitOrLoss() {
+    let registrationAmount = parseFloat(document.getElementById("registrationAmount").value);
+    let totalSales = parseFloat(document.getElementById("totalSales").value);
+    let resultElement = document.getElementById("result");
+    let profitOrLoss;
+
+    if (isNaN(registrationAmount) || isNaN(totalSales)) {
+        resultElement.textContent = "Please enter valid numbers.";
+        return;
+    }
+
+    if (totalSales >= registrationAmount) {
+        profitOrLoss = totalSales - registrationAmount;
+        resultElement.textContent = "Profit: Ksh" + profitOrLoss.toFixed(2);
+    } else {
+        profitOrLoss = registrationAmount - totalSales;
+        resultElement.textContent = "Loss: Ksh" + profitOrLoss.toFixed(2);
+    }
+}
 
 
 

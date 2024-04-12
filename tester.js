@@ -1,3 +1,4 @@
+//creating cards for the farmers
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("userForm").addEventListener("submit", function(event) {
         event.preventDefault();

@@ -29,35 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// // Create a new card element
-// const card = document.createElement("div");
-// const loanContainer = document.getElementById("loanContainer");
 
-// // Dynamically generate content based on loan amount
-// if (loan === 50000) {
-//     card.classList.add('Regular');
-//     card.innerHTML = `<h3>Regular Card</h3><p>Name: ${firstName} ${lastName}</p><p>Hello ${firstName} ${lastName}, you have successfully acquired the applied ${loan} from Farmer's-aid. This loan has an increment of 8% after every month</p>`;
-// } else if (loan > 50000 && loan < 75000) {
-//     card.classList.add("Regular");
-//     card.innerHTML = `<h3>Regular Card</h3><p>Name: ${firstName} ${lastName}</p><p>Sorry ${firstName} ${lastName}, please subscribe to a higher card to be able to acquire this amount</p>`;
-// } else if (loan === 75000) {
-//     card.classList.add('Advance');
-//     card.innerHTML = `<h3>Advance Card</h3><p>Name: ${firstName} ${lastName}</p><p>Hello ${firstName} ${lastName}, you have successfully acquired the applied ${loan} from Farmer's-aid. This loan has an increment of 8% after every month</p>`;
-// } else if (loan > 75000 && loan < 150000) {
-//     card.classList.add("Advance");
-//     card.innerHTML = `<h3>Advance Card</h3><p>Name: ${firstName} ${lastName}</p><p>Sorry ${firstName} ${lastName}, please subscribe to a higher card to be able to acquire this amount</p>`;
-// } else if (loan === 150000) {
-//     card.classList.add("Platinum");
-//     card.innerHTML = `<h3>Platinum Card</h3><p>Name: ${firstName} ${lastName}</p><p>Hello ${firstName} ${lastName}, you have successfully acquired the applied ${loan} from Farmer's-aid. This loan has an increment of 8% after every month</p>`;
-// } else if (loan > 150000) {
-//     card.classList.add("Platinum");
-//     card.innerHTML = `<h3>Platinum Card</h3><p>Name: ${firstName} ${lastName}</p><p>Sorry ${firstName} ${lastName}, we only have a loan limit of 150000</p>`;
-// }
-
-// console.log("Generated Card:", card);
-
-// Append the card to the loan container
-// Define the loanContainer variable
 let loanContainer = document.getElementById('loanContainer');
 
 // Now you can use the loanContainer variable

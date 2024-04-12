@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("green-falling-autumn-leaves-3d-animation-nature-tree-with-white-background-free-video (1).jpg");
+  background-image: url("https://c8.alamy.com/comp/2BXK0AN/tree-in-the-wind-with-falling-green-leaves-2BXK0AN.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -320,3 +320,25 @@ p {
   color: white;
 
 }
+
+#itemsList{
+  list-style: none;
+}
+
+.btn-buy{
+  background: transparent;
+  margin-left: 5px;
+  border: none;
+  font-size: 15px;
+  padding: 10px;
+  color: black;
+  cursor: pointer;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.btn-buy:hover{
+  background: #4caf50;
+  color: white;
+}
+

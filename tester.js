@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", function() {
         card.classList.add("card");
 
         if (amount === 30000) {
-            card.classList.add("regular");
+            card.className = "regular";
             card.innerHTML = `<h3>Regular Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
         } else if (amount === 50000) {
-            card.classList.add("advance");
+            card.className = "advance";
             card.innerHTML = `<h3>Advance Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
         } else if (amount === 100000) {
-            card.classList.add("platinum");
+            card.className = "platinum";
             card.innerHTML = `<h3>Platinum Card</h3><p>Name: ${firstName} ${lastName}</p><p>Registration Amount: ${amount}</p>`;
         } else {
             card.innerHTML = "<p>Invalid registration amount!</p>";
@@ -158,12 +158,20 @@ function updateCard(acresToRent, cardType) {
 
 }
 const items = [
-    { name: "Maize Seeds", price: 190, stock: 10 },
-    { name: "Bean Seeds", price: 180, stock: 10 },
-    { name: "Fertilizer", price: 1650, stock: 10 },
-    { name: "Jembe", price: 450, stock: 10 }
+    { name: "Maize Seeds", price: 190, stock: 1200},
+    { name: "Bean Seeds", price: 180, stock: 1012},
+    { name: "Fertilizer", price: 1650, stock: 1100 },
+    { name: "kales", price: 450, stock: 560 },
+    { name: "Sunflower Seeds", price:650, stock:760},
+    { name: "Potatoes", price: 100, stock: 1000 },
+    { name: "Carrots", price: 150, stock: 1000 },
+    { name: "Cabbage", price: 200, stock: 1000 },
+    { name: "Onion", price: 100, stock: 1000 },
+    { name: "Rice", price: 300, stock: 1000 },
+    { name: "Soybean", price: 400, stock: 1000 },
+    
 ];
-
+//function to display the items in stock
 function displayItems() {
     const itemsList = document.getElementById("itemsList");
     itemsList.innerHTML = ""; // Clear previous list
@@ -173,7 +181,8 @@ function displayItems() {
         li.textContent = `${item.name} - Price: Ksh ${item.price} per kilo or unit, Stock: ${item.stock}`;
       
         const buyButton = document.createElement("button");
-        buyButton.textContent = "Buy";
+        buyButton.className = "btn-buy"
+        buyButton.innerHTML = '<i class="fa-solid fa-cart-shopping"></i>';
         buyButton.addEventListener("click", () => buyItem(item));
       
         li.appendChild(buyButton);
@@ -234,13 +243,13 @@ function formSubmission(event) {
 }
 document.getElementById("userForm").addEventListener("submit", formSubmission);
 
-// Function to display all farmer's names
+// Function to display all farmer's details
 let visible = false;
 const showFarmersList = document.getElementById("showFarmer");
 const farmersList = document.getElementById("farmerlist");
 showFarmersList.addEventListener("click", () => {
     if (!visible) {
-        fetch("http://localhost:3000/user")
+        fetch("http://localhost:3000/usersform")
             .then(response => response.json())
             .then(farmers => {
                 farmersList.innerHTML = "";

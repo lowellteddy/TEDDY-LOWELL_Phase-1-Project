@@ -339,6 +339,7 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
         const farmerCardContainer = document.getElementById('farmerCardContainer');
         const farmerCard = document.createElement('div');
         farmerCard.classList.add('card');
+        let const = prompt("Enter card type")
   
         if (farmer.cardType === 'regular') {
           farmerCard.classList.add('yellow');

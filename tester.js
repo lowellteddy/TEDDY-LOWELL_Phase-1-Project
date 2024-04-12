@@ -256,7 +256,7 @@ showFarmersList.addEventListener("click", () => {
 
      
 
-// displaying farmers details on the card
+// displaying farmers details on the card for the farms
 document.getElementById('showFarmerDetails').addEventListener('click', function() {
     // Assuming data is fetched from a JSON file
     fetch('http://localhost:3000/user')

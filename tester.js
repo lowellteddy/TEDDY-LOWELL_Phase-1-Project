@@ -184,7 +184,7 @@ function displayItems() {
 function buyItem(item) {
     if (item.stock > 0) {
         item.stock--;
-        displayItems(); // Updating the displayed items
+        displayItems(); // Updating the displayed items in the list
     } else {
         alert("Item is sold out!");
     }

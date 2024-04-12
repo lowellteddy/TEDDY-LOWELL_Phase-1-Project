@@ -13,7 +13,7 @@ farmersAid is a user friendly app that is meant to help farmers and aid them wit
 3. JavaScript
 
 ## LIVE SITE
-https://github.com/lowellteddy/TEDDY-LOWELL_Phase-1-Project
+https://lowellteddy.github.io/TEDDY-LOWELL_Phase-1-Project/
 
 ## CONTACTS
 you can contact me at:

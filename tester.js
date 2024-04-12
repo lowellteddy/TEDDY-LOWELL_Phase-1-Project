@@ -99,7 +99,7 @@ function rentLand() {
      window.alert("Maximum acres allowed for the selected card type exceeded.");
      return;
  }
-    //if a number which is less than zero and greater than 10
+    //if a number which is less than zero and greater than 10 it cannot function
     if (acresToRent <= 0 || acresToRent > maxAcres) {
         alert("Invalid number of acres to rent.");
         return;

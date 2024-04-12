@@ -131,6 +131,7 @@ function getMaxAcres(acresToRent, cardType) {
     }
 }
 
+//using a function to get number of ferterlizers that would be offered
 function getFertilizerBags(cardType) {
     switch (cardType) {
         case "regular":

@@ -215,7 +215,7 @@ function formSubmission(event) {
     })
     .then((response) => response.json())
     .then((data) => {
-        // Handle successful response
+        // Handling successful response
         console.log("Data posted successfully:", data);
         // Optionally, perform any actions after successful submission
     })

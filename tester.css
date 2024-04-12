@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  body {
+    background: rgb(255, 255, 255);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .regular {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .advance {
+    background-color: red;
+    color: black;
+  }
+  
+  .platinum {
+    background-color: black;
+    color: white;
+  }
+  
+  .header {
+    background-color: #998b8b;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    font-weight: 60;
+    font-family: "Times New Roman", Times, serif;
+    line-height: 0.2;
+  }
+  
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-icon {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(8, 90, 0);
+  }
+  
+  .content {
+    margin-left: 8px;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  
+  .container {
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100vh;
+      background-color: transparent;
+      font-family: Arial, sans-serif;
+  }
+  
+  .form-group,
+  .farm,
+  .lease {
+    width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 90%;
+  }
+  
+  .form-group h2,
+  .farm h2,
+  .lease h2 {
+    margin: 0 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .form-group label,
+  .farm p,
+  .lease p {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .form-group button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .form-group button[type="submit"]:hover {
+    background-color: #45a049;
+    color: white;
+  }
+  
+  .btn-eligible{
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 15px;
+  }
+  
+  .btn-eligible:hover{
+      background-color: #45a049;
+      color: white;
+  }
+  
+  .btn-rent{
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+      margin-top: 2px;
+  }
+  
+  .btn-rent:hover{
+      background-color: #45a049;
+      color: white;
+  }
+  
+  .listContainer {
+    width: 500px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 90%;
+  }
+  
+  .listContainer button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .listContainer button:hover {
+    background-color: #45a049;
+  }
+  
+  .listContainer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .listContainer li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .listContainer li:last-child {
+    border-bottom: none;
+  }
+  
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+  

@@ -1,0 +1,93 @@
+{
+  "user": [
+    {
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "100000",
+      "id": "9572"
+    },
+    {
+      "id": "c678",
+      "firstName": "Abby",
+      "lastName": "Lowell",
+      "amount": "50000"
+    },
+    {
+      "id": "4452",
+      "firstName": "Abby",
+      "lastName": "Lowell",
+      "amount": "100000"
+    },
+    {
+      "id": "d2d6",
+      "firstName": "Abby",
+      "lastName": "Lowell",
+      "amount": "50000"
+    }
+  ],
+  "usersform": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "cardType": "regular",
+      "registrationAmount": 200,
+      "loanAcquired": 5000,
+      "acresRented": 10,
+      "id": "5656"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "cardType": "advanced",
+      "registrationAmount": 300,
+      "loanAcquired": 8000,
+      "acresRented": 15,
+      "id": "3f01"
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Johnson",
+      "cardType": "platinum",
+      "registrationAmount": 500,
+      "loanAcquired": 10000,
+      "acresRented": 20,
+      "id": "36ef"
+    },
+    {
+      "id": "7b1e",
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "30000"
+    },
+    {
+      "id": "144c",
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "30000"
+    },
+    {
+      "id": "f1b2",
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "50000"
+    },
+    {
+      "id": "3677",
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "30000"
+    },
+    {
+      "id": "bb34",
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "50000"
+    },
+    {
+      "id": "baab",
+      "firstName": "Teddy",
+      "lastName": "Lowell",
+      "amount": "30000"
+    }
+  ]
+}

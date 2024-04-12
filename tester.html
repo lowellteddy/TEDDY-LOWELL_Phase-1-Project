@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FarmersAid</title>
+    <link rel="stylesheet" href="tester.css"/>
+    <script src="https://kit.fontawesome.com/c3d0b246eb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="header">
+        <div class="item">
+          <h2 class="app-icon">
+            <i class="fa-sharp fa-solid fa-tractor"></i>
+            <div class="content">FarmersAid</div>
+          </h2>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="starter">
+         <form action="" id="userForm">
+            <div class="form-group">
+           <h2>Farmer's Registration</h2>
+           <label for="firstName">First Name:</label>
+           <input type="text" id="firstName" name="firstName" required=""><br>
+   
+           <label for="lastName">Last Name:</label>
+           <input type="text" id="lastName" name="lastName" required=""><br>
+   
+           <label for="amount">Registration Amount:</label>
+           <input type="number" id="amount" name="amount" required=""><br>
+   
+           <button type="submit" class="btn-submit">Register</button>
+         </div>
+         </form>
+        </div>
+   
+   
+   <!-- loan application -->
+    <div class="farm">
+      <h2>Farmer's loan Application</h2>
+      <p id="status">
+        If you wish to apply for a loan,provide your card details and loan
+        amount you wish to receive
+      </p>
+      <button onclick="checkEligibility()" class="btn-eligible">Check Eligibility</button>
+    </div>
+
+    <!-- land lease application -->
+    <div class="lease">
+      <h2>Farmer's lease Application</h2>
+      <!-- <p>Card Type: <span id="cardType">Regular</span></p>
+      <p>Land Rented: <span id="landRented">0</span> acres</p>
+      <p>Total Cost: ksh<span id="totalCost">0</span></p> -->
+
+      <div id="cardType"></div>
+      <div id="landRented"></div>
+      <div id="totalCost"></div>
+      <div id="fertilizerInfo"></div>
+
+      <button onclick="rentLand()" class="btn-rent">Rent Land</button>
+    </div>
+    
+    <div>
+      <button id="showItemsBtn">Show Items</button>
+      <div id="shopItems" style="display: none">
+        <ul id="itemsList"></ul>
+      </div>
+    </div>
+
+    <div class="listContainer">
+      <button id="showFarmer">Show Farmer Details</button>
+        <ul id="farmersList"></ul>
+        <div id="farmerCardContainer" class="card">
+          <h5 id="FirstName" class="FarmersName" ></h5>
+          <h5 id="LastName" class="FarmersName" ></h5>
+          <p id="Amount" class="cardText"></p>
+        </div>   
+    </div>
+    </div>
+    <style>
+      body {
+        background-image: url("green-falling-autumn-leaves-3d-animation-nature-tree-with-white-background-free-video (1).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+    
+    <script src="tester.js"></script>
+  </body>
+</html>

@@ -263,7 +263,7 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
        .then(response => response.json())
        .then(data => {
             // Assuming data is an array of  the farmer objects
-            const farmer = data[Math.floor(Math.random() * data.length)]; // Randomly select a farmer for demonstration
+            const farmer = data[Math.floor(Math.random() * data.length)]; // Randomly select a farmer for demonstration on the card
         
   
         const farmerCardContainer = document.getElementById('farmerCardContainer');

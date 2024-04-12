@@ -39,7 +39,7 @@ loanContainer = 'This is the loan container.';
 function checkEligibility() {
     let amountInput = prompt("Enter loan amount:");
     if (amountInput === null || amountInput === "") {
-        // Handle cancel or empty input
+        // Handling cancel or empty input
         return;
     }
     let amount = parseInt(amountInput);

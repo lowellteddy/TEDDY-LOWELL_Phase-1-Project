@@ -329,9 +329,12 @@ showFarmersList.addEventListener("click", () => {
 // displaying farmers details
 document.getElementById('showFarmerDetails').addEventListener('click', function() {
     // Assuming data is fetched from a JSON file
-   
-        // Assuming data is an array of farmer objects
-        const farmer = data[Math.floor(Math.random() * data.length)]; // Randomly select a farmer for demonstration
+    fetch('http://localhost:3000/user')
+       .then(response => response.json())
+       .then(data => {
+            // Assuming data is an array of farmer objects
+            const farmer = data[Math.floor(Math.random() * data.length)]; // Randomly select a farmer for demonstration
+        
   
         const farmerCardContainer = document.getElementById('farmerCardContainer');
         const farmerCard = document.createElement('div');
@@ -365,7 +368,7 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
   
   
 
-
+    })
 
 
 

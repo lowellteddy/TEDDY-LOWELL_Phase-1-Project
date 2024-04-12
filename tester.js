@@ -334,7 +334,7 @@ document.getElementById('showFarmerDetails').addEventListener('click', function(
     fetch('http://localhost:3000/user')
        .then(response => response.json())
        .then(data => {
-            // Assuming data is an array of farmer objects
+            // Assuming data is an array of  the farmer objects
             const farmer = data[Math.floor(Math.random() * data.length)]; // Randomly select a farmer for demonstration
         
   

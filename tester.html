@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container1">
       <div class="starter">
         <form action="" id="userForm">
           <div class="form-group">
@@ -47,20 +47,7 @@
             <button type="submit" class="btn-submit">Register</button>
           </div>
         </form>
-        <div class="Profit-card">
-          <h1>Profit or Loss Calculator</h1>
-          <label for="registrationAmount">Registration Amount:</label>
-          <input type="number" id="registrationAmount" />
-          <br />
-          <label for="totalSales">Total Sales:</label>
-          <input type="number" id="totalSales" />
-          <br />
-          <button onclick="calculateProfitOrLoss()">Calculate</button>
-          <p id="result"></p>
-        </div>
       </div>
-
-
       <!-- loan application -->
       <div class="farm">
         <h2>Farmer's loan Application</h2>
@@ -88,31 +75,37 @@
         <button onclick="rentLand()" class="btn-rent">Rent Land</button>
       </div>
 
-      <div>
+      <div class="container2">
+        <div class="starter">
+          <div class="form-group2">
+          <form action="" id="Profitloss">
+            <h1>Profit or Loss Calculator</h1>
+            <label for="registrationAmount">Registration Amount:</label>
+            <input type="number" id="registrationAmount" />
+            <br />
+            <label for="totalSales">Total Sales:</label>
+            <input type="number" id="totalSales" />
+            <br/>
+            <button onclick="calculateProfitOrLoss()" class="btn-calculate">Calculate</button>
+            <p id="result"></p>
+          </form>
+          </div>
+        </div>
         <button id="showItemsBtn">Show Items</button>
         <div id="shopItems" style="display: none">
           <ul id="itemsList"></ul>
         </div>
-      </div>
-
-      <div class="listContainer">
-        <button id="showFarmer">Show Farmer Details</button>
-        <ul id="farmersList"></ul>
-        <div id="farmerCardContainer" class="card">
-          <h5 id="FirstName" class="FarmersName"></h5>
-          <h5 id="LastName" class="FarmersName"></h5>
-          <p id="Amount" class="cardText"></p>
+        <div class="listContainer">
+          <button id="showFarmer">Show Farmer Details</button>
+          <ul id="farmersList"></ul>
+          <div id="farmerCardContainer" class="card">
+            <h5 id="FirstName" class="FarmersName"></h5>
+            <h5 id="LastName" class="FarmersName"></h5>
+            <p id="Amount" class="cardText"></p>
+          </div>
         </div>
       </div>
-    </div>
-    <style>
-      body {
-        background-image: url("green-falling-autumn-leaves-3d-animation-nature-tree-with-white-background-free-video (1).jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    </style>
-
+      </div>
     <script src="tester.js"></script>
   </body>
 </html>

@@ -157,7 +157,7 @@ function updateCard(acresToRent, cardType) {
     getMaxAcres(acresToRent, cardType);
 
 }
- const items = [
+const items = [
     { name: "Maize Seeds", price: 190, stock: 10 },
     { name: "Bean Seeds", price: 180, stock: 10 },
     { name: "Fertilizer", price: 1650, stock: 10 },
@@ -166,7 +166,7 @@ function updateCard(acresToRent, cardType) {
 
 function displayItems() {
     const itemsList = document.getElementById("itemsList");
-    itemsList.innerHTML = ""; // Clearing previous list
+    itemsList.innerHTML = ""; // Clear previous list
     
     items.forEach(item => {
         const li = document.createElement("li");
@@ -184,15 +184,22 @@ function displayItems() {
 function buyItem(item) {
     if (item.stock > 0) {
         item.stock--;
-        displayItems(); // Updating the displayed items in the list
+        displayItems(); // Update displayed items
     } else {
         alert("Item is sold out!");
     }
 }
 
+// Add a variable to keep track of the toggle state
+let toggleState = false;
+
 document.getElementById("showItemsBtn").addEventListener("click", () => {
-    document.getElementById("shopItems").style.display = "block";
-    displayItems();
+    // Toggle the display style between "block" and "none"
+    toggleState = !toggleState;
+    document.getElementById("shopItems").style.display = toggleState ? "block" : "none";
+    if (toggleState) {
+        displayItems();
+    }
 });
 function formSubmission(event) {
     event.preventDefault(); // prevent default form submission behavior

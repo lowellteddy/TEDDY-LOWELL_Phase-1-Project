@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let loanContainer = document.getElementById('loanContainer');
 
-// Now you can use the loanContainer variable
+//  use the loanContainer variable
 loanContainer = 'This is the loan container.';
 
 function checkEligibility() {
